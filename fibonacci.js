@@ -15,9 +15,9 @@ function fibsRec(n) {
   if (n === 1) return [0];
   if (n === 2) return [0, 1];
 
-  const prev = fibsRec(n - 1);
-  prev.push(prev[prev.length - 1] + prev[prev.length - 2]);
-  return prev;
+  const fib = fibsRec(n - 1);
+  fib.push(fib[fib.length - 1] + fib[fib.length - 2]);
+  return fib;
 }
 
 console.log(fibs(10), fibsRec(10));

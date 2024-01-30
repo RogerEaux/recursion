@@ -9,7 +9,7 @@ function mergeSort(arr) {
   let i = 0;
   let j = Math.round(aux.length / 2);
   while (true) {
-    if (Math.min(aux[i], aux[j]) === aux[i]) {
+    if (aux[i] < aux[j]) {
       arr.push(aux[i]);
       i += 1;
     } else {
